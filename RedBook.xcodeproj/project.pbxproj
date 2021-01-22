@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,11 @@
 		649EDBB025B917FA00074324 /* RedBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 649EDBAE25B917FA00074324 /* RedBook.xcdatamodeld */; };
 		649EDBB225B917FB00074324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649EDBB125B917FB00074324 /* Assets.xcassets */; };
 		649EDBB525B917FB00074324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649EDBB325B917FB00074324 /* LaunchScreen.storyboard */; };
+		8582DD4842256C7C95DE56CB /* Pods_RedBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8E1DCDC242E02F395A309B /* Pods_RedBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A768797A8BF247D967BE1A6 /* Pods-RedBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedBook.debug.xcconfig"; path = "Target Support Files/Pods-RedBook/Pods-RedBook.debug.xcconfig"; sourceTree = "<group>"; };
 		649EDBA225B917FA00074324 /* RedBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649EDBA525B917FA00074324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649EDBA725B917FA00074324 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		649EDBB125B917FB00074324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		649EDBB425B917FB00074324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		649EDBB625B917FB00074324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8E1DCDC242E02F395A309B /* Pods_RedBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D429652A55EB4B787D4CFD93 /* Pods-RedBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedBook.release.xcconfig"; path = "Target Support Files/Pods-RedBook/Pods-RedBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8582DD4842256C7C95DE56CB /* Pods_RedBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				649EDBA425B917FA00074324 /* RedBook */,
 				649EDBA325B917FA00074324 /* Products */,
+				742BC99B6512F176A98A746A /* Pods */,
+				C4E08B77B9ED60932646EE47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = RedBook;
 			sourceTree = "<group>";
 		};
+		742BC99B6512F176A98A746A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A768797A8BF247D967BE1A6 /* Pods-RedBook.debug.xcconfig */,
+				D429652A55EB4B787D4CFD93 /* Pods-RedBook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4E08B77B9ED60932646EE47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E1DCDC242E02F395A309B /* Pods_RedBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 649EDBB925B917FB00074324 /* Build configuration list for PBXNativeTarget "RedBook" */;
 			buildPhases = (
+				17C45C925A2AC05AF5DD2B91 /* [CP] Check Pods Manifest.lock */,
 				649EDB9E25B917FA00074324 /* Sources */,
 				649EDB9F25B917FA00074324 /* Frameworks */,
 				649EDBA025B917FA00074324 /* Resources */,
+				F2723A2774EA44B799A2106C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17C45C925A2AC05AF5DD2B91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2723A2774EA44B799A2106C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedBook/Pods-RedBook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedBook/Pods-RedBook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedBook/Pods-RedBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		649EDB9E25B917FA00074324 /* Sources */ = {
@@ -287,12 +355,14 @@
 		};
 		649EDBBA25B917FB00074324 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A768797A8BF247D967BE1A6 /* Pods-RedBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLUSE9BRPP;
 				INFOPLIST_FILE = RedBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,18 +370,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dm.RedBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		649EDBBB25B917FB00074324 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D429652A55EB4B787D4CFD93 /* Pods-RedBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLUSE9BRPP;
 				INFOPLIST_FILE = RedBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dm.RedBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
